@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cloudsynch.quickshare"
+    android:versionCode="100000007"
+    android:versionName="1.0.0" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permisson.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name=".QuickShareApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cloudsynch.quickshare.netresources.VideoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cloudsynch.quickshare.resource.ui.ResourceDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.cloudsynch.quickshare.socket.SocketService"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.umeng.fb.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PersonalInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cloudsynch.quickshare.socket.promp.PromptActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/dialog" />
+        <activity
+            android:name="com.cloudsynch.quickshare.transport.TransportActivity"
+            android:screenOrientation="portrait" android:launchMode="singleTask"/>
+            <intent-filter>
+                <action android:name="com.cloudsynch.quickshare.action.RECEIVE" />
+            </intent-filter>
+        <activity
+            android:name=".ui.UserHeaderSetting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name=".invite.zeroflow.ZeroFlowActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cloudsynch.quickshare.settings.SettingDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <provider
+            android:name=".db.QSProvider"
+            android:authorities="com.cloudsynch.quickshare.db"
+            android:exported="false" >
+        </provider>
+
+        <!-- android:value="51ad9285527015496f000006" -->
+        <!-- android:value="51c52bb156240b5f6501dcd2" -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="51ad9285527015496f000006" >
+        </meta-data>
+
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:exported="true"
+            android:process=":DownloadingService" >
+        </service>
+        <service android:name="com.cloudsynch.quickshare.invite.zeroflow.ServerSocketServer" >
+        </service>
+    </application>
+
+</manifest>
