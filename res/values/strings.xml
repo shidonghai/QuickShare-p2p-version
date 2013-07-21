@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">小A快传</string>
+
+    <!-- transfer -->
+    <string name="cancel">取消</string>
+    <string name="determine">确定</string>
+    <string name="retry">重试</string>
+    <string name="accept">接受</string>
+    <string name="refuse">拒绝</string>
+    <string name="waiting">等待好友的加入...</string>
+    <string name="wifi_title">Wifi - %1$s</string>
+    <string name="traffic_title">热点 - %1$s</string>
+    <string name="no_user">当前暂无用户加入</string>
+    <string name="time_out">等待超时</string>
+    <string name="add_whitelist">加入白名单</string>
+    <string name="request">请求加入</string>
+    <string name="wait">等待</string>
+    <string name="default_username">快传用户</string>
+    <string name="host_dissolve">%1$s解散了创建分享</string>
+    <string name="decide_dissolve">您确定解散当前分享吗？</string>
+    <string name="user_all_leave">用户已全部离开，是否离开？</string>
+    <string name="sdcard_not_available">SD卡不可用，无法接收文件</string>
+    <string name="scan">正在搜索</string>
+    <string name="scanning">搜索附近可用分享...</string>
+    <string name="no_result">无可用分享</string>
+    <string name="scan_result">附近可用分享</string>
+    <string name="join">加入</string>
+    <string name="refuse_hint">群主"%1$s"拒绝了你的加入申请</string>
+    <string name="hint">提示</string>
+    <string name="creating">正在创建</string>
+    <string name="host_stop">群主已经取消了分享，搜索一下其它分享吧</string>
+    <string name="creating_net">正在创建连接中</string>
+    <string name="transfering">正在传输</string>
+    <string name="get_file_from">正在接收来自%1$s的文件%2$s</string>
+    <string name="send_file_to">正在给%1$s发送文件%2$s</string>
+    <string name="done_get_file_from">已完成接收来自%1$s的文件%2$s</string>
+    <string name="done_send_file_to">已完成发送给%1$s的文件%2$s</string>
+    <!-- main menu -->
+    <string name="quickshare">小A快传</string>
+    <string name="network_resources">网络资源</string>
+    <string name="resources_management">资源管理</string>
+    <string name="settings">设置</string>
+    <string name="quickshare_description">多人零流量急速传输</string>
+    <string name="network_description">高清大片一网打尽</string>
+    <string name="resources_description">简单快捷的资源管理</string>
+    <string name="settings_description">应用设置</string>
+
+    <!-- network -->
+    <string-array name="select_items">
+
+        <!-- <item>首页</item> -->
+        <item>电影</item>
+        <item>电视剧</item>
+        <item>动漫</item>
+        <item>最新</item>
+        <!-- <item>更多</item> -->
+
+    </string-array>
+
+    <string name="intro">影视简介</string>
+    <string name="download">手雷下载</string>
+    <string name="mark">分</string>
+    <string name="loading_more">正在加载更多...</string>
+    <string name="loading">正在加载...</string>
+    <string name="network_retry">没有取到数据哦，点我重试一下</string>
+    <string name="format">格式：%1$s</string>
+    <string name="type">类型：%1$s</string>
+    <string name="area">地区：%1$s</string>
+    <string name="resolution">清晰度：普清</string>
+    <string name="year">年代：%1$s</string>
+    <string name="director">导演：%1$s</string>
+    <string name="actor">主演：%1$s</string>
+    <string name="language">语言：%1$s</string>
+
+    <!-- invite -->
+    <string name="invite_text">通过以下方式邀请好友安装小A快传</string>
+    <string name="invite_sms">短信</string>
+    <string name="invite_bluetooth">蓝牙</string>
+    <string name="invite_zero">零流量</string>
+    <string name="invite_sina">新浪微博</string>
+    <string name="invite_tencent">腾讯微博</string>
+    <string name="invite_renren">人人网</string>
+    <string name="invite_bluetooth_error">蓝牙邀请失败</string>
+    <string name="invite_zero_flow_top">请好友先打开手机的WLAN列表，连接到：</string>
+    <string name="invite_zero_flow_down">连接成功后，\n让好友打开浏览器，输入：</string>
+    <string name="invite_zero_flow_prompt">如果连接已设密码，请告知好友密码。</string>
+    <string name="invite_zero_flow_loading">正在创建连接</string>
+    <string name="invite_zero_flow_way_one">方式一</string>
+    <string name="invite_zero_flow_way_two">方式二</string>
+    <string name="invite_zero_flow_scan">扫描下方二维码：</string>
+
+    <!-- settings -->
+    <string name="settings_title">设置</string>
+    <string name="settings_voice">声音</string>
+    <string name="settings_voice_summary">通知、传输等提示音</string>
+    <string name="settings_vibration">震动</string>
+    <string name="settings_auto_disconnect">自动断开</string>
+    <string name="settings_auto_disconnect_summary">后台运行无传输时自动解散群组/退出群组</string>
+    <string name="settings_auto_update">自动检查更新</string>
+    <string name="settings_white_list">白名单</string>
+    <string name="settings_check_version">检查新版本</string>
+    <string name="settings_check_version_no_update">当前是最新版本。</string>
+    <string name="settings_check_version_error">检测失败，请稍后再试。</string>
+    <string name="settings_check_version_error_wifi">没有wifi网络。</string>
+    <string name="settings_feedback">意见反馈</string>
+    <string name="settings_score">给小A快传打分</string>
+    <string name="settings_faq">常见问题</string>
+    <string name="settings_about">关于小A快传</string>
+    <string name="settings_about_title">关于</string>
+    <string name="settings_a">小A快传</string>
+    <string name="settings_company">yuntongbu.com</string>
+    <string name="settings_version">版本 %1$s</string>
+    <string name="settings_weibo">新浪微博</string>
+    <string name="settings_attention">腾讯微博</string>
+    <string name="settings_copyright"> \&#064;2012yuntongbu.com\n北京云同步科技有限公司</string>
+    <string name="faq">Q：什么是小A快传？\n
+        A：小A快传是一款真正零流量传输的分享工具。速度是蓝牙的60倍，一首歌一秒就传完！同时支持单人分享与多人分享。\n\n
+        Q：小A快传有什么特点？\n
+        A：小A快传除了是一款传输工具外，也是搜索资源与资源管理工具。想看电影？搜索资源高速下载；还在面对大量的系统文件夹？资源管理条理清晰的分类让您轻松管理手机。\n\n
+        Q：小A快传可以使用WIFI传输吗？\n
+        A：必须支持！但是想要传输文件的话用户们必须在同一WIFI下哦！\n\n
+        Q：小A快传怎么做到“0”流量？\n
+        A：小A快传通过在手机之间建立热点功能，来传输数据。所以不需要连接任何外部网络。当然在有WIFI得情况下也是可以使用的。小A快传中用户可以查看到流量的信息，所以无需担心小A快传会消耗流量。\n\n
+        Q：小A快传支持多人传输吗？\n
+        A：小A快传最多支持5人同时进行传输\n\n
+        Q：小A快传传输速度比蓝牙快吗？\n
+        A：目前蓝牙4.0版本的物理层传输速度为：24Mbps，而小A快传使用802.11传输技术则能够达到物理层传输速度：100-300Mbps。相比起蓝牙烦琐的操作步骤，小A快传更加简单与灵活。所以蓝牙已经OUT啦！\n\n
+        Q：小A快传目前能传输什么内容？\n
+        A：小A快传支持传输：视频、应用、音乐、图片。同时用户也可通过资源管理界面传输更多的类别的文件。\n\n
+        Q：小A快传的网络资源怎么使用？\n
+        A：只要用户手机中安装了手雷，就可以直接将喜欢的视频下载到本地啦！不过需要在有网络的情况哟~\n\n
+        Q：怎么通过资源管理发送文件？\n
+        A：与好友连接上之后，切换到资源管理界面长按某一个文件就可以发送给好友啦！\n\n
+        Q：如何发送文件？\n
+        A：首先需要加入到一个分享，可以通过创建分享/加入分享来创建/加入。
+        创建分享：一名用户点击创建分享，并告知周围用户。
+        加入分享：周围用户点击加入分享，加入分享成功连接就可以互相发送文件啦！\n\n
+        Q：小A快传支持哪些平台上使用？\n
+        A：小A快传暂时只支持在安卓设备上使用。\n\n
+        Q：怎么能最快让身边的朋友都使用小A快传？\n
+        A：首页的下方有多种分享方式，可以通过短信、蓝牙、零流量等方式发送给好友。
+</string>
+    <!-- resource manager -->
+    <string name="resource_manager_title">资源管理</string>
+    <string name="resource_manager_video">视频</string>
+    <string name="resource_manager_audio">音乐</string>
+    <string name="resource_manager_photo">图片</string>
+    <string name="resource_manager_apk">应用</string>
+    <string name="resource_manager_doc">文档</string>
+    <string name="resource_manager_a">小A快传</string>
+    <string name="resource_manager_bluetooth">蓝牙</string>
+    <string name="resource_manager_zip">压缩包</string>
+    <string name="resource_manager_other">其它</string>
+    <string name="resource_manager_data">手机</string>
+    <string name="resource_manager_sd">sd卡</string>
+    <string name="resource_manager_used">已用 %1$s</string>
+    <string name="resource_manager_available">剩余 %1$s</string>
+    <string name="resource_manager_all">总容量 %1$s</string>
+    <string name="resource_manager_count">(%1$s)</string>
+    <string name="resource_manager_send">发送</string>
+    <string name="resource_manager_copy">复制</string>
+    <string name="resource_manager_cut">移动</string>
+    <string name="resource_manager_rename">重命名</string>
+    <string name="resource_manager_delete">删除</string>
+    <string name="resource_manager_select_all">全选</string>
+    <string name="resource_manager_dissolve">解散</string>
+    <string name="resource_manager_leave">离开</string>
+    <string name="resource_manager_receive">接收文件</string>
+    <string name="resource_manager_selected_count">当前总共%1$d个%2$s</string>
+    <string name="resource_manager_delete_finish">删除完成。</string>
+    <string name="resource_manager_delete_progress">正在删除\n</string>
+    <string name="resource_manager_delete_summary">是否要删除“%1$s”等文件</string>
+    <string name="resource_manager_select_file">请选择文件。</string>
+    <string name="resource_manager_rename_one">只能对一个文件重命名</string>
+    <string name="resource_manager_empty_name">文件名不能为空</string>
+    <string name="resource_manager_file_exist">该文件已存在, 请输入其他名字!</string>
+    <string name="resource_manager_rename_done">文件名重命名成功!</string>
+    <string name="resource_manager_copy_file">复制文件</string>
+    <string name="resource_manager_cut_file">移动文件</string>
+    <string name="resource_manager_copy_there">复制到此处</string>
+    <string name="resource_manager_cut_there">移动到此处</string>
+    <string name="resource_manager_copy_summary">是否复制到%1$s？</string>
+    <string name="resource_manager_cut_summary">是否移动到%1$s？</string>
+    <string name="resource_manager_copy_finish">复制完成。</string>
+    <string name="resource_manager_cut_finish">移动完成。</string>
+    <string name="resource_manager_cut_progress">正在移动：\n</string>
+    <string name="resource_manager_copy_progress">正在复制：\n</string>
+    <string name="resource_manager_sdcard_unavailable">sd卡不可用</string>
+
+    <!-- personal information -->
+    <string name="pi_title">个人信息</string>
+    <string name="pi_avatar_text">设置头像</string>
+    <string name="pi_nick_name_label">昵称</string>
+    <string name="pi_male_label">性别</string>
+    <string name="pi_signture_label">签名</string>
+    <string name="pi_signture_default">一位淡定的快传用户</string>
+    <string name="pi_bind_text">绑定</string>
+    <string name="sina_weibo_text">新浪微博</string>
+    <string name="tencent_weibo_text">腾讯微博</string>
+    <string name="renren_text">人人网</string>
+    <string name="wiexin_text">微信</string>
+    <string name="weibo_bind_text">绑定</string>
+    <string name="weibo_binded_text">已绑定</string>
+    <string name="begin_share">返回分享</string>
+    <string name="begin_share_tip">快与好友分享你的收藏吧</string>
+    <string name="pi_user_default_name">快传用户</string>
+    <string name="pi_user_default_avatar">head_01</string>
+    <string name="pi_user_default_signture">缘分是一种奇妙的东西，不相识的两个人，不经意间的一个照面</string>
+    <string name="pi_user_info_saved">信息保存成功</string>
+    <string name="pi_user_info_saved_error">信息保存失败</string>
+    <string name="pi_user_header_from_gallery">从相册选择</string>
+    <string name="pi_user_header_setting">头像选择</string>
+    <string name="pi_user_weibo_bind_successful">微博授权成功</string>
+    <string name="pi_user_weibo_unbind_successful">微博解除授权成功</string>
+    <string name="pi_user_set_header_failed">设置头像失败</string>
+
+    <!-- home -->
+    <string name="home_transfer_info">发送了%1$s的文件，收到了%2$s的文件</string>
+    <string name="home_create_share_button">创建分享</string>
+    <string name="home_add_share_button">加入分享</string>
+    <string name="home_create_share_button_note">让您与身边的朋友尽情分享</string>
+    <string name="home_add_share_button_note">加入身边朋友的小圈子吧！</string>
+
+    <!-- history -->
+    <string name="history_title">传输记录</string>
+    <string name="history_no_record">没有传输记录</string>
+    <string name="history_storage_total_space">储存空间：</string>
+    <string name="history_storage_free_space">可用空间：</string>
+    <string name="history_transfer_prompt_1">亲，您已</string>
+    <string name="history_transfer_prompt_2">零流量</string>
+    <string name="history_transfer_prompt_3">传输文件</string>
+    <string name="history_transfer_prompt_4">小A快传已为您节省流量</string>
+    <string name="history_record_del">删除已选（%s个历史）</string>
+    <string name="history_del_record">删除历史</string>
+    <string name="history_del_record_file">删除历史和文件</string>
+    <string name="history_item_open">打开</string>
+    <string name="history_item_delete">删除</string>
+    <string name="history_item_share">分享</string>
+    <string name="history_item_attribute">属性</string>
+    <string name="history_file_name">名称：%s</string>
+    <string name="history_file_type">类型：%s</string>
+    <string name="history_file_dir">位置：%s</string>
+    <string name="history_file_received">已传输：%s</string>
+    <string name="history_file_total_size">总大小：%s</string>
+    <string name="history_file_receiver">接收方：%s</string>
+    <string name="history_file_status">传输状态：%s</string>
+    <string name="history_file_date">传输日期：%s</string>
+    <string name="history_file_send_to">发送给</string>
+    <string name="history_file_receive_from">来自</string>
+    <string name="history_file_sender_me">我</string>
+    <string name="history_file_share_to">分享到</string>
+    <string name="history_file_share_to_sina">分享到新浪微博</string>
+    <string name="history_file_share_to_tencent">分享到腾讯微博</string>
+    <string name="history_file_share_to_weixin">分享到微信</string>
+    <string name="history_file_share_to_renren">分享到人人网</string>
+    <string name="histor_file_status_finish">完成</string>
+    <string name="histor_file_status_failed">失败</string>
+    <string name="histor_file_status_sending">正在的传输</string>
+    <string name="histor_file_send_size">发送了</string>
+    <string name="histor_file_recv_size">，收到了</string>
+    <string name="histor_file_sendrecv_text">的文件</string>
+    <string name="histor_no_item_to_del">没有选择删除已选</string>
+
+    <!-- download -->
+    <string name="dm_error_download_failed">下载失败！</string>
+    <string name="dm_error_not_support">当前手雷版本不支持下载,安装最新版本？</string>
+    <string name="dm_error_not_install">您当前没有安装手雷，是否现在安装？</string>
+
+    <!-- share -->
+    <string name="share_successful">分享成功！</string>
+    <string name="share_failed">分享失败！</string>
+    <string name="share_no_oauthed">没有授权！</string>
+    <string name="share_msg_left_num">还可以输入%s字</string>
+    <string name="share_msg_empty">分享内容为空</string>
+    <string name="share_msg_default">Hi,推荐一款零流量的极速传输工具——小A快传，一分钟传输1G高清电影。下载链接：http://xakc.yuntongbu.com/download</string>
+    <string name="share_unbind_weibo">是否解除绑定？</string>
+</resources>

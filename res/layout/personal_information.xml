@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pi_bg" >
+
+    <com.cloudsynch.quickshare.widgets.Titlebar
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_title_bg" />
+
+    <RelativeLayout
+        android:id="@+id/avater_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pi_items_height"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="@dimen/pi_margin_border"
+        android:layout_marginRight="@dimen/pi_margin_border"
+        android:layout_marginTop="@dimen/pi_items_margin_top"
+        android:background="@drawable/home_personal_information_bg_01"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/avater"
+            android:layout_width="@dimen/pi_avatar_icon_wh"
+            android:layout_height="@dimen/pi_avatar_icon_wh"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin_left"
+            android:src="@drawable/head_01" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/default_margin_left"
+            android:layout_toRightOf="@id/avater"
+            android:gravity="center_vertical"
+            android:text="@string/pi_avatar_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/pi_title_txt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avater_panel"
+        android:layout_marginLeft="@dimen/pi_margin_border"
+        android:layout_marginRight="@dimen/pi_margin_border"
+        android:layout_marginTop="@dimen/pi_items_margin_top"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/nick_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pi_items_height"
+            android:background="@drawable/home_personal_information_bg_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <TextView
+                style="@style/pi_user_text_style"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_left"
+                android:text="@string/pi_nick_name_label" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@null"
+                android:text="快传用户001" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nick_male_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pi_items_height"
+            android:layout_below="@id/nick_name_layout"
+            android:background="@drawable/home_personal_information_bg_body"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <TextView
+                style="@style/pi_user_text_style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_left"
+                android:layout_weight="2"
+                android:text="@string/pi_male_label" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pi_margin_border"
+                android:src="@drawable/home_personal_information_man" />
+
+            <ImageView
+                android:id="@+id/man_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pi_margin_border"
+                android:src="@drawable/home_personal_information_choose_button_01" />
+
+            <ImageView
+                android:id="@+id/man_unchecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pi_margin_border"
+                android:src="@drawable/home_personal_information_choose_button_02"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_left"
+                android:src="@drawable/home_personal_information_woman" />
+
+            <ImageView
+                android:id="@+id/woman_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pi_margin_border"
+                android:src="@drawable/home_personal_information_choose_button_01"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/woman_unchecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_personal_information_choose_button_02" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nick_signture_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pi_items_height"
+            android:layout_below="@id/nick_male_layout"
+            android:background="@drawable/home_personal_information_bg_down"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                style="@style/pi_user_text_style"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_left"
+                android:text="@string/pi_signture_label" />
+
+            <EditText
+                android:id="@+id/user_signture"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="3"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="@string/pi_signture_default" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weibo_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_panel"
+        android:layout_marginLeft="@dimen/pi_margin_border"
+        android:layout_marginRight="@dimen/pi_margin_border"
+        android:layout_marginTop="@dimen/pi_items_margin_top"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/sina_weibo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pi_items_height"
+            android:background="@drawable/home_personal_information_bg_top"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/sina_icon"
+                android:layout_width="@dimen/pi_weibo_icon_wh"
+                android:layout_height="@dimen/pi_weibo_icon_wh"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_margin_left"
+                android:gravity="center_vertical"
+                android:src="@drawable/sina_icon" />
+
+            <TextView
+                android:id="@+id/sina_label"
+                style="@style/pi_user_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/default_margin_left"
+                android:layout_toRightOf="@id/sina_icon"
+                android:gravity="center_vertical"
+                android:text="@string/sina_weibo_text" />
+
+            <TextView
+                android:id="@+id/bind_sina_weibo"
+                android:layout_width="@dimen/pi_weibo_button_width"
+                android:layout_height="@dimen/pi_weibo_button_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/default_margin_right"
+                android:background="@drawable/weibo_bind_selector"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="@string/weibo_bind_text" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tencent_weibo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pi_items_height"
+            android:layout_below="@id/sina_weibo"
+            android:background="@drawable/home_personal_information_bg_body" >
+
+            <ImageView
+                android:id="@+id/tencent_icon"
+                android:layout_width="@dimen/pi_weibo_icon_wh"
+                android:layout_height="@dimen/pi_weibo_icon_wh"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_margin_left"
+                android:gravity="center_vertical"
+                android:src="@drawable/tencent_icon" />
+
+            <TextView
+                android:id="@+id/tencent_label"
+                style="@style/pi_user_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/default_margin_left"
+                android:layout_toRightOf="@id/tencent_icon"
+                android:gravity="center_vertical"
+                android:text="@string/tencent_weibo_text" />
+
+            <TextView
+                android:id="@+id/bind_tencent_weibo"
+                android:layout_width="@dimen/pi_weibo_button_width"
+                android:layout_height="@dimen/pi_weibo_button_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/default_margin_right"
+                android:background="@drawable/weibo_bind_selector"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="@string/weibo_bind_text" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/renren_weibo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pi_items_height"
+            android:layout_below="@id/tencent_weibo"
+            android:background="@drawable/home_personal_information_bg_down" >
+
+            <ImageView
+                android:id="@+id/renren_icon"
+                android:layout_width="@dimen/pi_weibo_icon_wh"
+                android:layout_height="@dimen/pi_weibo_icon_wh"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_margin_left"
+                android:gravity="center_vertical"
+                android:src="@drawable/renren_icon" />
+
+            <TextView
+                android:id="@+id/renren_label"
+                style="@style/pi_user_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/default_margin_left"
+                android:layout_toRightOf="@id/renren_icon"
+                android:gravity="center_vertical"
+                android:text="@string/renren_text" />
+
+            <TextView
+                android:id="@+id/bind_renren_weibo"
+                android:layout_width="@dimen/pi_weibo_button_width"
+                android:layout_height="@dimen/pi_weibo_button_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/default_margin_right"
+                android:background="@drawable/weibo_bind_selector"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="@string/weibo_bind_text" >
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

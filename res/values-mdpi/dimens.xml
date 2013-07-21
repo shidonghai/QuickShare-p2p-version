@@ -1,0 +1,13 @@
+<resources>
+    <!-- home -->
+    <dimen name="home_margin_top">10dip</dimen>
+
+    <!-- Settings -->
+    <dimen name="setting_icon_margin_top">10dip</dimen>
+    <dimen name="setting_weibo_margin_top">30dip</dimen>
+    <dimen name="setting_name_text_size">25sp</dimen>
+    <dimen name="setting_company_text_size">20sp</dimen>
+    <dimen name="setting_version_text_size">20sp</dimen>
+    <dimen name="home_user_button_top">15dip</dimen>
+
+</resources>

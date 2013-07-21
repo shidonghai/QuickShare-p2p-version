@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:duplicateParentState="true"
+                android:layout_width="match_parent"
+                android:background="@color/pi_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+    <com.cloudsynch.quickshare.widgets.Titlebar
+            android:visibility="gone"
+            android:id="@+id/title_bar"
+            android:background="@drawable/setting_title_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+            android:id="@+id/icon"
+            android:layout_below="@+id/title_bar"
+            android:src="@drawable/about_icon"
+            android:layout_marginTop="@dimen/setting_icon_margin_top"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/name"
+            android:layout_below="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:text="@string/settings_a"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textColor="#4f544e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:text="@string/settings_company"
+            android:textSize="16sp"
+            android:textColor="#8B8E8B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/version"
+            android:layout_below="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:text="@string/settings_version"
+            android:textColor="#8B8E8B"
+            android:layout_marginTop="90dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:id="@+id/weibo"
+            android:text="@string/settings_weibo"
+            android:layout_marginTop="@dimen/setting_weibo_margin_top"
+            android:layout_below="@+id/version"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/setting_about_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/tencent"
+            android:text="@string/settings_attention"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/weibo"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/setting_about_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/settings_copyright"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="#bbbbbb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

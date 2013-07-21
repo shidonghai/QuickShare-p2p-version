@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/pi_bg"
+                android:duplicateParentState="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <com.cloudsynch.quickshare.widgets.Titlebar
+            android:id="@+id/title_bar"
+            android:background="@drawable/setting_title_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ScrollView
+            android:layout_below="@id/title_bar"
+            android:scrollbars="none"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+            <com.cloudsynch.quickshare.widgets.ExpandedGridView
+                    android:id="@+id/grid_view"
+
+                    android:layout_marginTop="5dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dip"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dip"/>
+
+            <include layout="@layout/resource_manager_storages" android:layout_width="fill_parent"
+                     android:layout_height="wrap_content" android:id="@+id/data_storage"
+                     android:layout_marginTop="10dp"
+                     android:layout_below="@+id/grid_view"/>
+            <include android:id="@+id/sd_storage" android:layout_width="fill_parent"
+                     android:layout_height="wrap_content" layout="@layout/resource_manager_storages"
+                     android:layout_marginTop="5dp"
+                     android:layout_below="@+id/data_storage"/>
+
+
+            <com.cloudsynch.quickshare.widgets.ExpandedGridView
+                    android:id="@+id/category_size"
+                    android:listSelector="@color/transparent"
+                    android:layout_below="@id/sd_storage"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dip"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dip"/>
+        </RelativeLayout>
+    </ScrollView>
+    <!-- <include
+             layout="@layout/invite_layout"
+             android:layout_alignParentBottom="true"
+             android:layout_width="wrap_content"
+             android:layout_height="150dp"/>-->
+</RelativeLayout>

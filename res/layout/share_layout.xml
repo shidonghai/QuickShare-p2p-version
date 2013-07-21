@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pi_bg" >
+
+    <com.cloudsynch.quickshare.widgets.Titlebar
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_title_bg" />
+
+    <RelativeLayout
+        android:id="@+id/share_content"
+        android:layout_width="wrap_content"
+        android:layout_height="220dip"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/share_msg_bg" >
+
+        <TextView
+            android:id="@+id/left_text_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginRight="20dip"
+            android:text="@string/share_msg_left_num" />
+
+        <EditText
+            android:id="@+id/share_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/left_text_num"
+            android:layout_marginBottom="20dip"
+            android:paddingLeft="5dip"
+            android:padding="10dip"
+            android:gravity="top"
+            android:text="@string/share_msg_default"
+            android:textColor="#000000"
+            android:background="@null"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/share_button"
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:layout_below="@+id/share_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/share_button"
+        android:gravity="center"
+        android:text="@string/history_item_share"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

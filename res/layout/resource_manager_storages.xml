@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <TextView
+            android:id="@+id/storage_type"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:text="@string/resource_manager_sd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/storage_type">
+        <ProgressBar
+                android:id="@+id/sd_progress"
+                android:visibility="gone"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+        <com.cloudsynch.quickshare.widgets.ResourcePercentageBar
+                android:id="@+id/progress"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="20dp"/>
+
+        <TextView
+                android:id="@+id/sd_used"
+                android:textColor="@color/black"
+                android:layout_below="@+id/progress"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/sd_available"
+                android:layout_toRightOf="@+id/sd_used"
+                android:layout_below="@+id/progress"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/sd_all"
+                android:layout_toRightOf="@+id/sd_available"
+                android:layout_below="@+id/progress"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

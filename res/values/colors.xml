@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#ffeeeeee</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff42adf4</color>
+    <color name="title_name_color">#4f544e</color>
+
+    <!-- resource_manager -->
+    <color name="resource_video">#df6093</color>
+    <color name="resource_audio">#3895db</color>
+    <color name="resource_photo">#73c32c</color>
+    <color name="resource_apk">#a182df</color>
+    <color name="resource_doc">#e6cb54</color>
+    <color name="resource_a">#747576</color>
+    <color name="resource_bluetooth">#e69c1b</color>
+    <color name="resource_zip">#40b4cc</color>
+    <color name="resource_other">#8c99bc</color>
+    <color name="resource_empty_paint">#C8D7DA</color>
+    <color name="pi_bg">#EEEEF1</color>
+    <color name="setting_summary_color">#969696</color>
+
+    <!-- net resource -->
+    <color name="select_text">#77797a</color>
+    <color name="select_bg">#d8dcde</color>
+    <color name="setting_text_color">#4B4B4B</color>
+    <color name="network_item_bg">#eeeef1</color>
+    <color name="network_item_title_bg">#77797a</color>
+    <color name="invite_text_color">#CC9810</color>
+
+    <!-- home -->
+    <color name="home_text">#3f3f3f</color>
+    <color name="description_text">#aaaaaa</color>
+    <color name="golden">#cc9810</color>
+    <color name="home_bg">#eff4ee</color>
+
+</resources>

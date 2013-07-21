@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/select_bg" >
+
+    <com.cloudsynch.quickshare.widgets.Titlebar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <com.cloudsynch.quickshare.widgets.SelectView
+        android:id="@+id/selectview"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/title"
+        android:background="@color/select_bg" />
+
+    <ScrollView
+        android:id="@+id/homepage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/selectview"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.cloudsynch.quickshare.widgets.BannerViewPager
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <LinearLayout
+                android:id="@+id/recommendContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.cloudsynch.quickshare.netresources.AlbumListView
+        android:id="@+id/movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/selectview"
+        android:visibility="gone" />
+
+    <com.cloudsynch.quickshare.netresources.AlbumListView
+        android:id="@+id/tvs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/selectview"
+        android:visibility="gone" />
+
+    <com.cloudsynch.quickshare.netresources.AlbumListView
+        android:id="@+id/cartoons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/selectview"
+        android:visibility="gone" />
+
+    <com.cloudsynch.quickshare.netresources.AlbumListView
+        android:id="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/selectview"
+        android:visibility="gone" />
+
+</RelativeLayout>

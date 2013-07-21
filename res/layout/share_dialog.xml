@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/prompt_title_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/prompt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history_file_share_to"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sina_panel"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/header"
+        android:background="@drawable/prompt_item_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/sina_icon"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:paddingTop="5dip"
+            android:src="@drawable/sina_icon" />
+
+        <TextView
+            android:id="@+id/sina_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/sina_icon"
+            android:gravity="center"
+            android:text="@string/sina_weibo_text"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-5dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:src="@drawable/share_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tencent_panel"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/sina_panel"
+        android:background="@drawable/prompt_item_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/tt_icon"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:paddingTop="5dip"
+            android:src="@drawable/tencent_icon" />
+
+        <TextView
+            android:id="@+id/tt_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/tt_icon"
+            android:gravity="center"
+            android:text="@string/tencent_weibo_text"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-5dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:src="@drawable/share_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/renren_panel"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/tencent_panel"
+        android:background="@drawable/prompt_bottom_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/rr_icon"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/renren_icon" />
+
+        <TextView
+            android:id="@+id/rr_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/rr_icon"
+            android:gravity="center"
+            android:text="@string/renren_text"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+</RelativeLayout>

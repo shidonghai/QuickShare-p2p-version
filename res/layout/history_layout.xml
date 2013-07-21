@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pi_bg" >
+
+    <com.cloudsynch.quickshare.widgets.Titlebar
+        android:id="@+id/history_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_title_bg" />
+
+    <RelativeLayout
+        android:id="@+id/history_del_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_down_bg"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/history_del_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/history_del_bg"
+            android:gravity="center"
+            android:text="@string/cancel" />
+
+        <ImageView
+            android:id="@+id/separete_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/history_del_cancel"
+            android:src="@drawable/home_separate_line" />
+
+        <TextView
+            android:id="@+id/history_del_comfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_toRightOf="@id/separete_line"
+            android:background="@drawable/transmission_delete_button"
+            android:gravity="center"
+            android:text="@string/history_record_del"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/history_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/history_del_panel"
+        android:layout_below="@id/history_top"
+        android:divider="@null"
+        android:dividerHeight="20dip" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/list_item_empty_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/history_list"
+        android:gravity="center"
+        android:text="@string/history_no_record"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="resource_type">
+        <item>@string/resource_manager_video</item>
+        <item>@string/resource_manager_audio</item>
+        <item>@string/resource_manager_photo</item>
+        <item>@string/resource_manager_apk</item>
+        <item>@string/resource_manager_doc</item>
+        <item>@string/resource_manager_a</item>
+        <item>@string/resource_manager_bluetooth</item>
+        <item>@string/resource_manager_zip</item>
+    </string-array>
+
+</resources>

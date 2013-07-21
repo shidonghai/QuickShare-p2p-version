@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/history_margin_left"
+    android:layout_marginRight="@dimen/history_margin_right"
+    android:background="@color/pi_bg"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/sender_info"
+        android:layout_width="@dimen/history_avatar_wh"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/history_avatar_wh"
+            android:layout_height="@dimen/history_avatar_wh"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/head_01" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="炮兵哥"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/history_uncheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/prompt_selected_button_02"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/history_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/prompt_selected_button_03"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/transfer_file_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@id/sender_info"
+        android:layout_toRightOf="@id/history_check"
+        android:background="@drawable/transmission_record_bg_01"
+        android:gravity="clip_vertical" >
+
+        <ImageView
+            android:id="@+id/file_icon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/head_01" />
+
+        <LinearLayout
+            android:id="@+id/file_base_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/file_icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/file_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="10dip"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="10dip"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:ellipsize="middle"
+                android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

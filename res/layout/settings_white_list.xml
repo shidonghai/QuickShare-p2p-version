@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:duplicateParentState="true"
+                android:background="@color/pi_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ListView
+            android:id="@+id/white_list"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:cacheColorHint="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</RelativeLayout>

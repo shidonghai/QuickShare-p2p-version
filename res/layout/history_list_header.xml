@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/history_margin_left"
+    android:layout_marginRight="@dimen/history_margin_right"
+    android:background="@color/pi_bg"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/history_storage_info"
+        android:layout_width="match_parent"
+        android:layout_height="53dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/storage_total_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:text="@string/history_storage_total_space"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/storage_free_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:text="@string/history_storage_free_space"
+            android:textColor="#000000" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentBottom="true"
+            android:background="#cfcfcf" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/history_transfer_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_storage_info"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="#eeeef1"
+        android:textColor="#000000" />
+
+</RelativeLayout>
